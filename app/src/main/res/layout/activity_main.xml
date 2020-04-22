@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <com.wenxiangli.CameraSurfaceView
+       android:id="@+id/csf"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+      <Button
+          android:text="拍照"
+          android:onClick="takePic"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp" />
+      <Button
+          android:text="录像"
+          android:onClick="takeRec"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp" />
+      <Button
+          android:text="结束录像"
+          android:onClick="endRec"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp" />
+      <Button
+          android:text="闪光灯"
+          android:onClick="openFlash"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp" />
+   </LinearLayout>
+
+</RelativeLayout>
